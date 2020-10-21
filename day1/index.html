@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         
+     </style>
+ </head>
+ <body>
+     <ol id="lo">
+         <li>啦啦啦</li>
+         <li>啦啦啦</li>
+         <li>啦啦啦</li>
+         <li>啦啦啦</li>
+     </ol>
+     <ol>
+        <li>嘟嘟嘟</li>
+        <li>嘟嘟嘟</li>
+        <li>嘟嘟嘟</li>
+        <li>嘟嘟嘟</li>
+    </ol>
+    <script>
+        // 获取8个li 并以伪数组的方式存储
+        // var lis = document.getElementsByTagName('li')
+        // console.log(lis);
+        // 获取id为lo的ol在获取里面的li 并以伪数组的方式存储
+        //  var ol = document.getElementById('lo').getElementsByTagName('li');
+        // console.log(ol); 
+        // 获取两个ol并存储到伪数组里，然后从伪数组里下标为0的ol里面找li
+        var ol = document.getElementsByTagName('ol');//结果是['ol','ol']
+        console.log(ol[0].getElementsByTagName('li'));
+
+
+        // 上边是兼容ie9
+        // 下边不兼容
+
+       /*  // 获取第一个id为lo的元素  
+        var ol = document.querySelector('#lo');
+        // 在获取ol里面所有的li
+        const ali =  ol.querySelectorAll('li');
+        console.log(ali);
+
+        // 获取id为lo的元素下的第二个li
+        var ool = document.querySelector('#lo li:nth-child(2)');
+        console.log(ool); */
+    </script>
+ </body>
+
+ </html>

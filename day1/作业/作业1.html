@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .inp input {
+        width: 200px;
+        height: 25px;
+    }
+</style>
+
+<body>
+    <div class="inp">
+        <input type="text" value="邮箱/ID/手机号">
+        <input type="text" value="密码">
+    </div>
+    <script>
+        var inp = document.querySelector('input');
+        var inp1 = document.querySelector('.inp input:nth-child(2)');
+        inp1 = inpuu1()
+        inp = inpuu();
+        function inpuu() {
+            inp.onfocus = function () {
+                if (this.value === '邮箱/ID/手机号') {
+                    this.value = '';
+                }
+                this.style.color = '#333';
+            }
+            inp.onblur = function () {
+                if (this.value.trim() === '') {
+                    this.value = '邮箱/ID/手机号';
+                }
+                this.style.color = '#999';
+            }
+        }
+        function inpuu1() {
+            inp1.onfocus = function () {
+                if (this.value === '密码') {
+                    this.value = '';
+                }
+                this.style.color = '#333';
+            }
+            inp1.onblur = function () {
+                if (this.value.trim() === '') {
+                    this.value = '密码';
+                }
+                this.style.color = '#999';
+            }
+        }
+    </script>
+</body>
+
+</html>

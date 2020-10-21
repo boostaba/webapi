@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .b2 {
+            width: 50px;
+            height: 25px;
+            background-color: wheat;
+            text-align: center;
+            line-height: 25px;
+        }
+
+        .b3 {
+            width: 50px;
+            height: 0px;
+            overflow: hidden;
+        }
+
+        .b3 ul li {
+            width: 50px;
+            height: 25px;
+            text-align: center;
+            border-left: 1px solid skyblue;
+            border-bottom: 1px solid skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b1">
+        <div class="b2">
+            微博
+        </div>
+        <div class="b3">
+            <ul>
+                <li>私信</li>
+                <li>评论</li>
+                <li>@我</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var b1 = document.querySelector('b2');
+        var b2 = document.querySelector('b3');
+        b1.onmouseover = function(){
+
+        }
+    </script>
+</body>
+
+</html>

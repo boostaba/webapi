@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="bbl">芭芭拉</button>
+    <button id="name">你的名字</button><br>
+    <img src="../../../zyl2.jpg" alt="">
+    <script>
+        var bbll = document.getElementById('bbl');
+        var aname = document.getElementById('name');
+        var img = document.querySelector('img')
+        bbll.onclick = function() {
+            img.src = '../../../zyl.jpg';
+            img.title = '不知道是谁';
+        }
+        aname.onclick = function() {
+            img.src = '../../../zyl2.jpg';
+            img.title = '你的名字';
+        }
+    </script>
+</body>
+
+</html>
